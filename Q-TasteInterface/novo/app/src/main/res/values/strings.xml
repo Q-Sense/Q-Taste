@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FridgeInterface</string>
+    <string name="action_settings">Settings</string>
+    <string name="QTASTE">Q-Taste</string>
+    <string name="readings">Readings</string>
+    <string name="stock">Stock</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_readings_screen">readings_screen</string>
+
+    <string name="barcode">Barcode</string>
+    <string name="qrcode">QRCode</string>
+    <string name="nfc">NFC</string>
+    <string name="info">I</string>
+    <string name="title_activity_camera_test">camera_test</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_info">info</string>
+
+    <string name="info2"> University of Aveiro \nProject in Electromechanical Engineering \n May 2015 \n Product Manager: Miguel Ferreira \n Engineers: Carolina Gouveia \n     Maria Brandão \n    Vanessa Martins \n V1.0</string>
+</resources>

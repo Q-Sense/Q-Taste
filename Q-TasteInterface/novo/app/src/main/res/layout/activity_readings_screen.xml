@@ -1,0 +1,71 @@
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- "match parent" nos layouts do text view. View of this text will be as big as its parent-->
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:text="@string/readings"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/barcode"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/barcode"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/stylebutton"
+            android:enabled="true"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/qrcode"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/qrcode"
+            android:layout_below="@id/barcode"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/stylebutton"
+            android:textColor="#FFFFFF"
+            android:enabled="true"
+            android:elegantTextHeight="false" />
+
+    <Button
+        android:id="@+id/nfc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/nfc"
+        android:layout_below="@id/qrcode"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/stylebutton"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
+</LinearLayout>
+
+</ScrollView>
+    <!--android:drawableLeft="@drawable/qrcode_48" -->

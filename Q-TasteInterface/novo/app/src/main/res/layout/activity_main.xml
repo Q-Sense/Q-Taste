@@ -1,0 +1,79 @@
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- "match parent" nos layouts do text view. View of this text will be as big as its parent-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qtaste_logo"
+        android:id="@+id/logo"/>
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <Button
+    android:id="@+id/readings"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:text="@string/readings"
+    android:background="@drawable/stylebutton"
+    android:layout_marginTop="10dp"
+    android:textColor="#FFFFFF"    />
+
+    <Button
+    android:id="@+id/stock"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:text="@string/stock"
+    android:layout_below="@id/readings"
+    android:background="@drawable/stylebutton"
+    android:layout_marginTop="10dp"
+    android:textColor="#FFFFFF"/>
+
+    <Button
+     android:id="@+id/settings"
+     android:layout_width="150dp"
+     android:layout_height="wrap_content"
+     android:text="@string/settings"
+     android:layout_below="@id/stock"
+     android:background="@drawable/stylebutton"
+     android:layout_marginTop="10dp"
+     android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btdStock"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="ShowStock"
+            android:layout_below="@id/settings"
+            android:background="@drawable/stylebutton"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/info"
+        android:text="@string/info"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:layout_gravity="bottom|right"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,112 @@
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createdb"
+    android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabCreator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Product Creator"
+                        android:id="@+id/lblCreatorTitle"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"/>
+
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:ems="10"
+                        android:id="@+id/txtName"
+                        android:layout_marginTop="20dp"
+                        android:hint="Product Name"/>
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/txtCode"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:hint="Code"/>
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtQuantity"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:hint="Quantity"
+                        android:inputType="number"/>
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtDurability"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:hint="Durability"
+                        android:inputType="number"/>
+
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Add Product"
+                        android:id="@+id/btnAdd"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:enabled="false"/>
+
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Create Alarm"
+                        android:id="@+id/creAlarm"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:enabled="true"/>
+                </LinearLayout>
+
+
+
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
